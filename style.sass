@@ -1,26 +1,37 @@
 @function pxToVW($px)
     @return ($px / 1920) * 100 + 0vw
-    
+
 @function pxToVH($px)
     @return ($px / 1080) * 100 + 0vh
-    
+
+@mixin sizing($width, $height)
+    width: $width + 0px
+    height: $height + 0px
+
 $primary_color: white
+
+h2
+    font-weight: 600
+    font-size: 48px
+    line-height: 59px
+    margin-top: 64px
 
 html,body
     padding: 0
     margin: 0
     font-family: 'Montserrat'
     header
-        width: 1440px
-        height: 735px
+        @include sizing(1440,735)
+        // width: 1440px
+        // height: 735px
+        max-width: 1440px
         background-image: url('./assets/images/header_bacground.png')
         display: flex
         margin: auto
         flex-direction: column
         align-items: center
         nav
-            width: 1440px
-            height: 76px
+            @include sizing(1440, 76)
             display: flex
             justify-content: center
             .nav-container
@@ -78,7 +89,7 @@ html,body
                 line-height: 32px
                 margin-top: 0
                 margin-bottom: 16px
-            a 
+            a
                 color: $primary_color
                 font-weight: 400
                 font-size: 16px
@@ -92,13 +103,38 @@ html,body
             align-items: center
             .furniture-container
                 width: 1200px
-                h2
-                    font-weight: 600
-                    font-size: 48px
-                    line-height: 59px
-                    margin-top: 64px
                 &__image-container
                     display: flex
                     flex-wrap: wrap
                     justify-content: space-between
                     row-gap: 31px
+                    div
+                        position: relative
+                        .image-text
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            transform: translate(-50%, -50%)
+                            color: white
+                            font-weight: 600
+                            font-size: 34px
+                            line-height: 41px
+                            text-align: center
+            .special-container
+                width: 1200px
+                .special-card
+                    width: 379px
+                    h5
+                        font-weight: 500
+                        font-size: 24px
+                        line-height: 29px
+                        margin-top: 10px
+                        margin-bottom: 9px
+                    p
+                        color:#888888
+                        margin: 0
+                    .price-container
+                        display: flex
+                        justify-content: space-between
+
+

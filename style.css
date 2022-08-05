@@ -1,3 +1,10 @@
+h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  margin-top: 64px;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -6,6 +13,7 @@ html, body {
 html header, body header {
   width: 1440px;
   height: 735px;
+  max-width: 1440px;
   background-image: url("./assets/images/header_bacground.png");
   display: flex;
   margin: auto;
@@ -107,15 +115,44 @@ html main .main-container, body main .main-container {
 html main .main-container .furniture-container, body main .main-container .furniture-container {
   width: 1200px;
 }
-html main .main-container .furniture-container h2, body main .main-container .furniture-container h2 {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 59px;
-  margin-top: 64px;
-}
 html main .main-container .furniture-container__image-container, body main .main-container .furniture-container__image-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 31px;
+}
+html main .main-container .furniture-container__image-container div, body main .main-container .furniture-container__image-container div {
+  position: relative;
+}
+html main .main-container .furniture-container__image-container div .image-text, body main .main-container .furniture-container__image-container div .image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+}
+html main .main-container .special-container, body main .main-container .special-container {
+  width: 1200px;
+}
+html main .main-container .special-container .special-card, body main .main-container .special-container .special-card {
+  width: 379px;
+}
+html main .main-container .special-container .special-card h5, body main .main-container .special-container .special-card h5 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+html main .main-container .special-container .special-card p, body main .main-container .special-container .special-card p {
+  color: #888888;
+  margin: 0;
+}
+html main .main-container .special-container .special-card .price-container, body main .main-container .special-container .special-card .price-container {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
