@@ -1,0 +1,85 @@
+@function pxToVW($px)
+    @return ($px / 1920) * 100 + 0vw
+    
+@function pxToVH($px)
+    @return ($px / 1080) * 100 + 0vh
+    
+$primary_color: white
+
+html,body
+    padding: 0
+    margin: 0
+    font-family: 'Montserrat'
+    header
+        width: 1440px
+        height: 735px
+        background-image: url('./assets/images/header_bacground.png')
+        display: flex
+        flex-direction: column
+        align-items: center
+        nav
+            width: 1440px
+            height: 76px
+            display: flex
+            justify-content: center
+            .nav-container
+                width: 1200px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                &__logo
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 36px
+                    line-height: 44px
+                    color: white
+                &__search
+                    display: flex
+                    align-items: center
+                    input
+                        box-sizing: border-box
+                        border: 1px solid #FFFFFF
+                        border-radius: 20px
+                        width: 288px
+                        height: 41px
+                        background-color: rgba(0,0 ,0, 0)
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 20px
+                        color: white
+                        padding: 10px 32px
+                    input::placeholder
+                        color: white
+                &__choice
+                    width: 15%
+                    display: flex
+                    justify-content: space-around
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 20px
+                    color: white
+        hr
+            color: rgba(255, 255, 255, 0.8)
+            width: 1200px
+        .header-content
+            color: $primary_color
+            width: 1200px
+            margin-top: 63px
+            h1
+                font-weight: 600
+                font-size: 64px
+                line-height: 70px
+                margin-bottom: 16px
+                width: 52%
+            h4
+                font-weight: 400
+                font-size: 24px
+                line-height: 32px
+                margin-top: 0
+                margin-bottom: 16px
+            a 
+                color: $primary_color
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+        

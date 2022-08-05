@@ -1,0 +1,96 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+}
+html header, body header {
+  width: 1440px;
+  height: 735px;
+  background-image: url("./assets/images/header_bacground.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html header nav, body header nav {
+  width: 1440px;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+}
+html header nav .nav-container, body header nav .nav-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html header nav .nav-container__logo, body header nav .nav-container__logo {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: white;
+}
+html header nav .nav-container__search, body header nav .nav-container__search {
+  display: flex;
+  align-items: center;
+}
+html header nav .nav-container__search input, body header nav .nav-container__search input {
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  width: 288px;
+  height: 41px;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  padding: 10px 32px;
+}
+html header nav .nav-container__search input::-moz-placeholder, body header nav .nav-container__search input::-moz-placeholder {
+  color: white;
+}
+html header nav .nav-container__search input:-ms-input-placeholder, body header nav .nav-container__search input:-ms-input-placeholder {
+  color: white;
+}
+html header nav .nav-container__search input::placeholder, body header nav .nav-container__search input::placeholder {
+  color: white;
+}
+html header nav .nav-container__choice, body header nav .nav-container__choice {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+html header hr, body header hr {
+  color: rgba(255, 255, 255, 0.8);
+  width: 1200px;
+}
+html header .header-content, body header .header-content {
+  color: white;
+  width: 1200px;
+  margin-top: 63px;
+}
+html header .header-content h1, body header .header-content h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  margin-bottom: 16px;
+  width: 52%;
+}
+html header .header-content h4, body header .header-content h4 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+html header .header-content a, body header .header-content a {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}/*# sourceMappingURL=style.css.map */
