@@ -8,6 +8,7 @@ html header, body header {
   height: 735px;
   background-image: url("./assets/images/header_bacground.png");
   display: flex;
+  margin: auto;
   flex-direction: column;
   align-items: center;
 }
@@ -93,4 +94,28 @@ html header .header-content a, body header .header-content a {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+html main, body main {
+  width: 1440px;
+  margin: auto;
+}
+html main .main-container, body main .main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html main .main-container .furniture-container, body main .main-container .furniture-container {
+  width: 1200px;
+}
+html main .main-container .furniture-container h2, body main .main-container .furniture-container h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  margin-top: 64px;
+}
+html main .main-container .furniture-container__image-container, body main .main-container .furniture-container__image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 31px;
 }/*# sourceMappingURL=style.css.map */
